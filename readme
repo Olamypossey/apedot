@@ -1,0 +1,75 @@
+# ApeDot: Decentralized Community Donation Pool 🎁
+
+A decentralized donation management system built on Stacks blockchain that enables community-driven fund distribution through reputation-based governance.
+
+## Features 🚀
+
+- **Pooled Donations**: Community members can contribute STX to a shared pool
+- **Reputation System**: NFT-based reputation tracking for governance
+- **Proposal Voting**: Reputation holders can vote on fund distribution
+- **Matching Pools**: Support for donation matching mechanisms
+- **Yield Distribution**: Automated cyclical distribution of yields
+- **Stacking Integration**: Delegated participation in Stacks consensus
+
+## Architecture 🏗️
+
+The contract implements several key components:
+
+- Donation pool management
+- Reputation token (NFT) system
+- Proposal submission and voting
+- Matching pool logic
+- Cyclical distribution mechanism
+
+## Installation 🛠️
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/apedot.git
+cd apedot
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Development 💻
+
+To test the contract:
+```bash
+clarinet test
+```
+
+To check contract:
+```bash
+clarinet check
+```
+
+## Deployment 🚀
+
+1. Configure your deployment settings in Clarinet.toml
+2. Deploy using Clarinet:
+```bash
+clarinet deploy --network testnet
+```
+
+## Testing 🧪
+
+Run the test suite:
+```bash
+clarinet test tests/apedot_test.ts
+```
+
+## Contract Interface 📋
+
+### Public Functions
+
+- `donate(amount: uint) -> (response uint uint)`
+- `delegate-stack(amount: uint) -> (response bool uint)`
+- `submit-proposal(proposal-id: uint, recipient: principal) -> (response bool uint)`
+- `vote(proposal-id: uint, weight: uint) -> (response bool uint)`
+- `execute-cycle(proposal-id: uint) -> (response uint uint)`
+
+
+
